@@ -14,7 +14,7 @@ Its main component is the Navbar function that instantiates the navigation bar.
 # Imports
 
 import dash_bootstrap_components as dbc
-import dash_html_components as html
+from dash import html
 
 
 # ----------------------------------------------------------------------------------------------------------------------
@@ -72,7 +72,7 @@ def Navbar(dropdown=False):
         ],
         href="alert_screen",
         style={
-            "font-size": "15px",
+            "fontSize": "15px",
             "color": "white",
         },
         className="btn btn-warning"
@@ -87,7 +87,7 @@ def Navbar(dropdown=False):
                         dbc.Col(html.Img(src=pyro_logo, width="120px")),
                     ],
                     align="center",
-                    no_gutters=True,
+                    justify="center"
                 ),
                 href="#",
             ),

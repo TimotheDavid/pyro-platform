@@ -28,8 +28,8 @@ import pandas as pd
 from datetime import datetime, timedelta
 
 # Various modules provided by Dash to build app components
-import dash_html_components as html
 import dash_bootstrap_components as dbc
+from dash import html
 import dash_leaflet as dl
 
 
@@ -128,7 +128,7 @@ def build_filters_object(map_type):
             'position': 'absolute',
             'bottom': '30px',
             'left': '10px',
-            'z-index': '1000'
+            'Zindex': '1000'
         }
     )
 
@@ -152,8 +152,8 @@ def build_legend_box(map_type=None):
     img_style = {'width': '4.5vh',
                  'height': '4.5vh'}
 
-    image_div_style = {'display': 'inline-block', 'height': '22px', 'margin-left': '2px'}
-    text_div_style = {'display': 'inline-block', 'height': '22px', 'margin-left': '7px'}
+    image_div_style = {'display': 'inline-block', 'height': '22px', 'marginLeft': '2px'}
+    text_div_style = {'display': 'inline-block', 'height': '22px', 'marginLeft': '7px'}
 
     if map_type == 'alerts':
 
@@ -189,7 +189,7 @@ def build_legend_box(map_type=None):
                     style={'position': 'absolute',
                            'bottom': '30px',
                            'right': '10px',
-                           'z-index': '1000'}
+                           'Zindex': '1000'}
                     )
 
 
